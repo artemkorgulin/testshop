@@ -1,0 +1,28 @@
+{
+  "name": "appshop",
+  "description": "",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "Shop\\": "lib",
+      "Shop\\Application\\Controllers\\": "application/controllers",
+      "Shop\\Application\\Models\\": "application/models",
+      "Shop\\Application\\Views\\": "application/views",
+      "Shop\\Merchants\\": "lib/merchants"
+    }
+  },
+  "authors": [
+    {
+      "name": "shop",
+      "email": "shop@shop.ru"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle" : "6",
+    "phpunit/phpunit": "6.0.0",
+    "phpunit/dbunit": "3.0.0",
+    "mockery/mockery": "1.1.0",
+    "bramus/router": "1.3"
+  }
+}
