@@ -15,6 +15,8 @@ if($method) {
 
 	if($dataMerchant->user->email) {
 		$email = str_replace("_",".",$dataMerchant->user->email);
+	} else {
+		$email = "guest@guest.ru";
 	}
 	if($dataMerchant->user->phone) {
 		$phone = $dataMerchant->user->phone;
